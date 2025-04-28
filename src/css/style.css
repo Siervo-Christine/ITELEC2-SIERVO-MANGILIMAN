@@ -1,69 +1,77 @@
-body {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root{
+    --main-color: #eeeeee;
+    --text-color: #C73659;
+    --box-color: #e2e2e2;
+    --shadow-color: #181818;
+
+}
+/*body{
+    background-color: var(--main-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Jost' , sans-serif;
-    text-align: center;
-    background-color: rgb(125, 177, 177);
-}
-
-.main{
+}*/
+/* Layout styling */
+.layout {
     display: flex;
-    width: 380px;
-    height: 560px;
-    flex-direction: column;
-    padding: 10px;
-    background: rgb(236, 240, 241);
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 5px 20px 50px #000000;
-    text-align: center;
 }
 
-h1 {
-    font-size: 30px;
-    color: #000000;
-    margin-bottom: 10px;
+/* Top Navbar styling */
+.top-navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
 }
 
-form {
+.top-navbar-content {
     display: flex;
-    flex-direction: column;
-    width: 70%;
-    max-width: 300px;
-    text-align: center;
-    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-input {
-    padding: 10px;
-    border: 1px solid #ffffff79;
-    border-radius: 5px;
-    font-size: 15px;
-    outline: none;
-    transition: border-color 0.3s;
-    text-align: center;
+.top-navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 8px 16px;
 }
 
-button{
-    width: 50%;
-    height: 40px;
-    margin: 10px auto;
-    justify-content: center;
-    display: block;
-    color: #fff;
-    background: #000000;
-    font-size: 15px;
+.top-navbar a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.logo {
     font-weight: bold;
-    margin-top: 10px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
+    font-size: 1.2em;
 }
 
-button:hover{
-    background: #777575;
+/* Side Navbar styling */
+.side-navbar {
+    width: 200px;
+    background-color: #444;
+    padding-top: 20px;
+    min-height: 100vh;
+}
+
+.side-navbar a {
+    display: block;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.side-navbar a:hover {
+    background-color: #575757;
 }
